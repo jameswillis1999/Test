@@ -1,0 +1,9 @@
+
+name: Test
+main: me.malverngroup.Test.Test
+version: 1.0
+description: >
+             Plugin Test.
+commands:
+  helloworld:
+    description: Sends the player a message
