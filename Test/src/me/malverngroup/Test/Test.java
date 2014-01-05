@@ -34,7 +34,7 @@ public class Test extends JavaPlugin
 		{
 			if(args.length == 0)
 			{
-				player.sendMessage(ChatColor.GREEN + "Hello!");
+				player.sendMessage(ChatColor.GREEN + "Hello World!");
 			}
 			else if (args.length == 1)
 			{
