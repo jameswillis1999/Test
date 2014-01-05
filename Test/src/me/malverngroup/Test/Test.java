@@ -14,6 +14,7 @@ public class Test extends JavaPlugin{
 	public final Logger logger = Logger.getLogger("Minecraft");
 	public static Test plugin;
 	public static String args2;
+	public static String args1;
 
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
 	{
@@ -22,7 +23,7 @@ public class Test extends JavaPlugin{
 		{
 			if(sender instanceof Player)
 			{
-				if(args.length == 0)
+				if(args.length <= 1)
 				{	
 					player.sendMessage(ChatColor.GREEN + "Type /msg <name> <message>");
 				}
@@ -30,8 +31,10 @@ public class Test extends JavaPlugin{
 				{
 			
 					args2 = args[1];
+					args1 = args[0];
 					Player targetPlayer = player.getServer().getPlayer(args[0]);
 					targetPlayer.sendMessage(ChatColor.GREEN + "[" + player.getDisplayName() + "]" + " ---> " + args2);
+					player.sendMessage(ChatColor.GREEN + "You have successfully sent the message!");
 					
 				}
 			}
