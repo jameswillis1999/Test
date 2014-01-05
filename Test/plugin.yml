@@ -7,3 +7,5 @@ description: >
 commands:
   helloworld:
     description: Sends the player a message
+  msg:
+    description: Heals a player
